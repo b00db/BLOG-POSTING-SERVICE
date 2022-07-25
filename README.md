@@ -79,7 +79,7 @@ JSDoc?
 
 ### 3. [Separate main.js with api.js for Separating API Server.](https://github.com/b00db/BLOG-POSTING-SERVICE/commit/f0bf2a88fa2961167b8e7ede27a2218dc5e13c49)
 
-중복된 코드를 하나의 로직으로 추상화하는 단계입니다.
+중복된 코드를 하나의 로직으로 추상화하는 단계입니다.   
 기존의 if 분기문에서의 공통된 로직은 다음과 같습니다.
 
 ```
