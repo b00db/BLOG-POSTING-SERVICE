@@ -76,3 +76,16 @@ JSDoc?
 ```
 
 <br>
+
+### 3. [Separate main.js with api.js for Separating API Server.](https://github.com/b00db/BLOG-POSTING-SERVICE/commit/f0bf2a88fa2961167b8e7ede27a2218dc5e13c49)
+
+중복된 코드를 하나의 로직으로 추상화하는 단계입니다.
+기존의 if 분기문에서의 공통된 로직은 다음과 같습니다.
+
+```
+- statusCode 값을 할당받습니다.
+- http body (response body) 값을 전달합니다.
+```
+
+또한, 기존 코드는 위의 공통된 로직이 없어도 런타임 전에 에러를 나타내지 않습니다.
+추상화 단계에서 함수로 인자를 설정해두거나 타입 정의를 하여 타입 체크 진행하는 방식으로 로직을 묶어서, 런타임에 가지 않더라도 오류를 알 수 있도록 코드를 리팩토링(Refactoring) 하는 것이 가독성과 유지보수성에 유리합니다.
